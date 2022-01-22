@@ -1,0 +1,14 @@
+・認証データ設定
+	・(Function/OtherSvc下の)SecretPassOtherSvc_Template.py をコピーしてSecretPassOtherSvc.pyを作成し、
+		自分のIAM認証データ(アクセスキー、シークレットキー)に書き換える。
+
+・Pythonライブラリインストール
+	今回のためだと不要なものも含まれてるので、インストールするライブラリを減らしたいなら、
+	実行時に必要とエラーが出たものを１つずつ追加してもよい。　boto3は必ず必要。
+	pip install beautifulsoup4 bs4 certifi chardet et-xmlfile idna jdcal openpyxl pip pyasn1 pyperclip pysmb pytz pywin32 requests setuptools soupsieve urllib3 xlwings pandas seaborn matplotlib opencv-python opencv-contrib-python pyocr chardet boto3 awscli
+
+・プログラムの一部更新
+	SesSendReceive.py、Execute関数の、
+		str_fromとstr_destを自分の環境に合わせて更新
+
+
